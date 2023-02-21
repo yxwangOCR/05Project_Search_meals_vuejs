@@ -7,17 +7,17 @@
                 My Meals
             </router-link>
             <div class="px-8 h-full flex items-center gap-8">
-                <router-link to="/"
+                <router-link :to="{ name: 'byName' }"
                     class="h-full flex items-center hover:bg-pink-100 hover:text-blue-800 transition-colors px-2">
-                    Search Meals
+                    Search Meal
                 </router-link>
-                <router-link to="/"
+                <router-link :to="{ name: 'byLetter' }"
                     class="h-full flex items-center hover:bg-pink-100 hover:text-blue-800 transition-colors px-2">
                     Meals by Letter
                 </router-link>
-                <router-link to="/"
+                <router-link :to="{ name: 'byIngredient' }"
                     class="h-full flex items-center hover:bg-pink-100 hover:text-blue-800 transition-colors px-2">
-                    Meals by Ingredients
+                    Meals by Ingredient
                 </router-link>
             </div>
         </header>
